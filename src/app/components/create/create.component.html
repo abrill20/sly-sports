@@ -1,0 +1,34 @@
+<div>
+    <br>
+    <mat-card>
+      <section class="mat-typography">
+        <h3>Create A New Article</h3>
+      </section>
+      <mat-divider></mat-divider>
+      <br>
+      <form [formGroup]="createForm" class="create-form">
+        <mat-form-field class="field-full-width">
+          <input matInput placeholder="Article Title" formControlName="title" #title>
+          <!--<mat-error *ngIf="createForm.controls['title'].errors.required">
+            Title is <strong>required</strong>
+          </mat-error>-->
+        </mat-form-field>
+        <mat-form-field class="field-full-width">
+          <input matInput placeholder="Author" formControlName="author" #author>
+        </mat-form-field>
+        <mat-form-field class="field-full-width">
+          <textarea matInput placeholder="Content" formControlName="content" #content></textarea>
+        </mat-form-field>
+        <mat-form-field class="field-half-width">
+          <textarea matInput placeholder="Sample Content" formControlName="sampleContent" #sampleContent></textarea>
+        </mat-form-field>
+        <mat-form-field class="field-full-width">
+          <input matInput placeholder="Image URL" formControlName="imageURL" #imageURL>
+        </mat-form-field>
+        
+        <br><br>
+        <button mat-raised-button color="accent" routerLink="/admin">Back</button>&nbsp;
+        <button type="submit" (click)="addArticle(title.value, author.value, content.value, sampleContent.value, imageURL.value)" [disabled]="createForm.pristine || createForm.invalid" mat-raised-button color="primary">Save</button>
+      </form>
+    </mat-card>
+  </div>

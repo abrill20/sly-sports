@@ -1,0 +1,95 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark mdb-color">
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" [routerLink]="['/articles']">SLUS Sports</a></mdb-navbar-brand>
+  <!-- Collapsible content -->
+  <links>
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:
+            true}">
+        <a class="nav-link waves-light" mdbWavesEffect routerLink='/articles'>Articles<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:
+            true}">
+        <a class="nav-link waves-light" mdbWavesEffect routerLink='/about'>About</a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+        <a class="nav-link waves-light" mdbWavesEffect routerLink='/contact'>Contact</a>
+      </li>
+      <!-- Dropdown -->
+      <li style="display: none" class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Basic dropdown<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+          <div class="divider dropdown-divider"></div>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+        </div>
+      </li>
+    </ul>
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" href="https://medium.com/@silasshah" target="_blank">
+          <i class="fa fa-medium"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" href="https://twitter.com/shahsilas" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li *ngIf="authService.loggedIn()" class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-user"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="javascript:;;" [routerLink]="['/profile']">Profile</a>
+          <a class="dropdown-item" href="javascript:;;" (click)="onLogoutClick()" href="#">Logout</a>
+        </div>
+      </li>
+      <li *ngIf="!authService.loggedIn()" class="nav-item">
+        <button type="button" mat-raised-button class="waves-light" (click)="basicModal.show()"
+          mdbWavesEffect>Sign In</button>
+      </li>
+    </ul>
+    <!-- Search form -->
+    <form class="form-inline waves-light nav-search-form" mdbWavesEffect>
+      <div class="md-form mt-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      </div>
+    </form>
+  </links>
+  <!-- Collapsible content -->
+
+
+  <!-- MODAL -->
+  <div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!-- FORM -->
+        <form [formGroup]="loginForm" class="text-center border border-light p-5 login-form">
+          <p class="h4 mb-4">Sign in</p>
+          <mat-form-field class="form-group">
+            <input matInput placeholder="Username" formControlName="username" #username>
+          </mat-form-field>
+          <mat-form-field class="form-group">
+            <input type="password" matInput placeholder="password"  formControlName="password" #password>
+          </mat-form-field>
+          <button mat-raised-button color="primary" block="true" class="my-4" type="submit" value="login" (click)="onLoginSubmit(username.value, password.value)" [disabled]="loginForm.pristine || loginForm.invalid">Sign
+            in</button>
+          <p>Not a member?
+            <a [routerLink]="['/register']" routerLinkActive="router-link-active">Register</a>
+          </p>
+        </form>
+        <!-- END FORM -->
+      </div>
+    </div>
+  </div>
+  <!-- END MODAL -->
+
+</mdb-navbar>

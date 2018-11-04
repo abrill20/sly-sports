@@ -1,0 +1,23 @@
+<br><br>
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Sign up</h1>
+      <p class="lead">Already a member? Please <a routerLink="/login">log in</a> instead.</p>
+      <form (submit)="onRegisterSubmit()">
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" class="form-control" name="username" placeholder="Username" [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="password">
+        </div>
+        <button type="submit" class="btn btn-default">Sign up!</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+<br><br>

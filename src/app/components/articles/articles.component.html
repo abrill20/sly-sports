@@ -1,0 +1,38 @@
+<div class="flex-container">
+  <!--Card-->
+    <mdb-card class="card" *ngFor="let article of articles">
+      <!--Card image-->
+      <div class="view overlay waves-light" mdbWavesEffect>
+        <mdb-card-img src="{{article.imageURL}}"></mdb-card-img>
+        <a (click)="goToArticle(article._id)">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <!--/.Card image-->
+
+      <!--Card content-->
+      <mdb-card-body>
+        <!--Title-->
+        <mdb-card-title>
+          <h4>{{article.title}}</h4>
+        </mdb-card-title>
+        <h6 class="grey-text pb-2"><strong><i>{{article.author}}</i></strong></h6>
+
+        <hr>
+
+        <!--Text-->
+        <mdb-card-text>
+          {{article.sampleContent}}
+        </mdb-card-text>
+
+        <a class="link-text" (click)="goToArticle(article._id)">
+          <h5 class="waves-light" mdbWavesEffect>Read more
+            <i class="fa fa-chevron-right waves-light" mdbWavesEffect></i>
+          </h5>
+        </a>
+      </mdb-card-body>
+      <!--/.Card content-->
+    </mdb-card>
+    <!--/.Card-->
+
+</div>

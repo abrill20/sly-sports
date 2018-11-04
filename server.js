@@ -25,6 +25,9 @@ mongoose.connection.on('error', (err) => {
 
 const app = express();
 
+var distDir = __dirname + "/dist/";
+app.use(express.static(distDir));
+
 //Port Number
 const httpPort = process.env.PORT || 8080
 

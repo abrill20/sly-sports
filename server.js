@@ -11,7 +11,9 @@ const admin = require('./routes/admin');
 const config = require('./config/database');
 
 // Connect to database
-mongoose.connect(process.env.MONGODB_URI || config.database);
+mongoose.connect(process.env.MONGODB_URI || config.database, {
+  useMongoClient: true
+});
 
 // On Connection
 mongoose.connection.on('connected', () => {
@@ -48,6 +50,11 @@ app.use('/', router);
 app.use('/users', users);
 app.use('/articles', articles);
 app.use('/admin', admin);
+
+// maybe edit
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/dist/sly-sports/index.html'))
+})
 
 app.listen(httpPort, () => {
   console.log(`HTTP server up on port ${httpPort}`)

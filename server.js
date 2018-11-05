@@ -58,6 +58,7 @@ app.get('*', (req, res) => {
 })
 
 app.get('/*', (req, res) => {
+  console.log(__dirname, '/src/index.html');
   res.sendFile(path.join(__dirname, '/src/index.html'))
 })
 

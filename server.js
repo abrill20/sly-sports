@@ -29,7 +29,7 @@ mongoose.connection.on('error', (err) => {
 const app = express();
 
 var distDir = __dirname + "/dist/";
-app.use(express.static(distDir));
+app.use(express.static(__dirname, 'dist', {index: false}));
 
 //Port Number
 const httpPort = process.env.PORT || 8080
@@ -53,8 +53,13 @@ app.use('/api/articles', articles);
 app.use('/api/admin', admin);
 
 // maybe edit
+
+app.get('', (req, res) => {
+  res.sendFile(path.join(__dirname, 'src', 'index.html'))
+})
+
 app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/dist/sly-sports/index.html'))
+  res.sendFile(path.join(__dirname, 'src', 'index.html'))
 })
 
 app.listen(httpPort, () => {

@@ -15,7 +15,7 @@ export class AuthService {
   user: any;
   helper = new JwtHelperService();
 
-  uri = 'http://localhost:8080';
+  uri = 'http://localhost:8080/';
 
   constructor(private http: Http, private jwtHelper: JwtHelperService, private router: Router) { }
 
@@ -23,14 +23,14 @@ export class AuthService {
   registerUser(user) {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post(`api/users/register`, user, {headers: headers})
+    return this.http.post(`${this.uri}api/users/register`, user, {headers: headers})
     .pipe(map(res => res.json()))
   }
 
   authenticateUser(user) {
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post(`api/users/authenticate`, user, {headers: headers})
+    return this.http.post(`${this.uri}api/users/authenticate`, user, {headers: headers})
     .pipe(map(res => res.json()))
   }
 
@@ -39,7 +39,7 @@ export class AuthService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type', 'application/json');
-    return this.http.get(`api/users/profile`, {headers: headers})
+    return this.http.get(`${this.uri}api/users/profile`, {headers: headers})
     .pipe(map(res => res.json()))
   }
 

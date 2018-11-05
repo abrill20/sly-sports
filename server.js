@@ -52,7 +52,6 @@ app.use('/api/users', users);
 app.use('/api/articles', articles);
 app.use('/api/admin', admin);
 
-// maybe edit
 app.get('*', (req, res) => {
   console.log(__dirname, '/src/index.html');
   res.sendFile(path.join(__dirname, '/src/index.html'))

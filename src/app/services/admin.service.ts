@@ -15,8 +15,8 @@ export class AdminService {
   user: any;
   helper = new JwtHelperService();
 
-  uri = 'http://localhost:8080/'; //for Dev
-  // uri = '' // for prod
+  //uri = 'http://localhost:8080/'; //for Dev
+  uri = '' // for prod
 
 
   constructor(private http: Http, private httpClient: HttpClient,private jwtHelper: JwtHelperService, private router: Router) { }

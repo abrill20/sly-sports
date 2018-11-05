@@ -15,7 +15,8 @@ export class AuthService {
   user: any;
   helper = new JwtHelperService();
 
-  uri = 'http://localhost:8080/';
+  // uri = 'http://localhost:8080/';
+  uri = '' // for prod
 
   constructor(private http: Http, private jwtHelper: JwtHelperService, private router: Router) { }
 

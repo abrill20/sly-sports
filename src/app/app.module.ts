@@ -34,8 +34,6 @@ import { ArticleService } from './services/article.service';
 
 import { AuthGuard } from './guards/auth.guard';
 import { AdminGuard } from './guards/admin.guard';
-import { routes } from './app-routing.module';
-import { RouterModule } from '@angular/router';
 
 export function tokenGetter() {
   const user = JSON.parse(localStorage.getItem('user'));
@@ -61,7 +59,6 @@ export function tokenGetter() {
   ],
   imports: [
     AppRoutingModule,
-    RouterModule.forRoot(routes),
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,

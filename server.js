@@ -10,28 +10,8 @@ const admin = require('./routes/admin');
 
 const config = require('./config/database');
 
-const app = express();
-
-//Port Number
-const httpPort = process.env.PORT || 8080
-
 // Connect to database
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/test", function (err, client) {
-  if (err) {
-    console.log(err);
-    process.exit(1);
-  }
-
-  // Save database object from the callback for reuse.
-  db = client.db();
-  console.log("Database connection ready");
-
-  // Initialize the app.
-  var server = app.listen(httpPort, function () {
-    var port = server.address().httpPort;
-    console.log("App now running on port", port);
-  });
-});
+mongoose.connect(process.env.MONGODB_URI || config.database);
 
 // On Connection
 mongoose.connection.on('connected', () => {
@@ -43,9 +23,13 @@ mongoose.connection.on('error', (err) => {
   console.log('Database error: '+err);
 });
 
+const app = express();
+
 var distDir = __dirname + "/dist/";
 app.use(express.static(distDir));
 
+//Port Number
+const httpPort = process.env.PORT || 8080
 
 // Cors Middleware
 app.use(cors());
@@ -64,3 +48,7 @@ app.use('/', router);
 app.use('/users', users);
 app.use('/articles', articles);
 app.use('/admin', admin);
+
+app.listen(httpPort, () => {
+  console.log(`HTTP server up on port ${httpPort}`)
+})

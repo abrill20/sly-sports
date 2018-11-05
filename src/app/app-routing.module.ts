@@ -19,7 +19,6 @@ import { AuthGuard } from './guards/auth.guard';
 import { AdminGuard } from './guards/admin.guard';
 
 const routes: Routes = [
-  {path:'', component: ArticleComponent},
   {path: 'create', component: CreateComponent, canActivate:[AdminGuard]},
   {path: 'edit/:id', component: EditComponent, canActivate:[AdminGuard]},
   {path: 'admin', component: AdminArticlesComponent, canActivate:[AdminGuard]},

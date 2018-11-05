@@ -57,6 +57,10 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/src/index.html'))
 })
 
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/src/index.html'))
+})
+
 app.listen(httpPort, () => {
   console.log(`HTTP server up on port ${httpPort}`)
 })

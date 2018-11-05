@@ -14,16 +14,16 @@ export class ArticleService {
   constructor(private http: Http, private httpPost: Http, private router: Router) { }
 
   getArticles() {
-    return this.http.get(`articles`).pipe(map(res => res.json()));;
+    return this.http.get(`api/articles`).pipe(map(res => res.json()));;
   }
 
   getArticleById(id) {
-    return this.http.get(`articles/${id}`);
+    return this.http.get(`api/articles/${id}`);
   }
 
   addComment(id, comment, username) {
     let headers = new Headers(); //this will be used to make sure only logged in users can comment
-    return this.http.post(`articles/${id}`, {comment: comment, username: username}, {})
+    return this.http.post(`api/articles/${id}`, {comment: comment, username: username}, {})
       .pipe(map(res => res.json()));
   }
 

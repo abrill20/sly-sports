@@ -29,12 +29,12 @@ export class AdminService {
 
   getArticles() {
     let headers = this.getHeaders();
-    return this.httpClient.get(`admin`)
+    return this.httpClient.get(`api/admin`)
   }
 
   getArticleById(id) {
     let headers = this.getHeaders();
-    return this.http.get(`admin/${id}`, {headers: headers})
+    return this.http.get(`api/admin/${id}`, {headers: headers})
   }
 
   addArticle(title, author, content, sampleContent, imageURL) {
@@ -46,7 +46,7 @@ export class AdminService {
       sampleContent: sampleContent,
       imageURL: imageURL
     };
-    return this.http.post(`admin/add`, article, {headers: headers})
+    return this.http.post(`api/admin/add`, article, {headers: headers})
   }
 
   updateArticle(id, title, author, content, sampleContent, imageURL) {
@@ -58,12 +58,12 @@ export class AdminService {
       sampleContent: sampleContent,
       imageURL: imageURL
     };
-    return this.http.post(`admin/update/${id}`, article, {headers: headers})
+    return this.http.post(`api/admin/update/${id}`, article, {headers: headers})
   }
 
   deleteArticle(id) {
     let headers = this.getHeaders();
-    return this.http.get(`admin/delete/${id}`, {headers:headers})
+    return this.http.get(`api/admin/delete/${id}`, {headers:headers})
   }
 
   loadToken(){

@@ -46,10 +46,10 @@ require('./config/passport')(passport);
 
 //Routers
 const router = express.Router();
-app.use('/', router);
-app.use('/users', users);
-app.use('/articles', articles);
-app.use('/admin', admin);
+app.use('/api', router);
+app.use('/api/users', users);
+app.use('/api/articles', articles);
+app.use('/api/admin', admin);
 
 // maybe edit
 app.get('*', (req, res) => {

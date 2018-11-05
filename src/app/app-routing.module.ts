@@ -18,7 +18,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { AuthGuard } from './guards/auth.guard';
 import { AdminGuard } from './guards/admin.guard';
 
-const routes: Routes = [
+export const routes: Routes = [
   {path: 'create', component: CreateComponent, canActivate:[AdminGuard]},
   {path: 'edit/:id', component: EditComponent, canActivate:[AdminGuard]},
   {path: 'admin', component: AdminArticlesComponent, canActivate:[AdminGuard]},

@@ -54,12 +54,12 @@ app.use('/api/admin', admin);
 
 app.get('*', (req, res) => {
   console.log(__dirname, '/src/index.html');
-  res.sendFile(path.join(__dirname, '/src/index.html'))
+  res.sendFile(path.join(__dirname, '/dist/index.html'))
 })
 
 app.get('/*', (req, res) => {
   console.log(__dirname, '/src/index.html');
-  res.sendFile(path.join(__dirname, '/src/index.html'))
+  res.sendFile(path.join(__dirname, '/dist/index.html'))
 })
 
 app.listen(httpPort, () => {

@@ -10,8 +10,10 @@ router.route('/').get((req, res) => {
   Article.find((err, articles) => {
     if (err)
       console.log(err);
-    else
+    else {
+      console.log("here are the articles");
       res.json(articles);
+    }
   });
 });
 

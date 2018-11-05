@@ -7,6 +7,7 @@ const passport = require('passport');
 const users = require('./routes/users');
 const articles = require('./routes/articles');
 const admin = require('./routes/admin');
+const path = require('path');
 
 const config = require('./config/database');
 
@@ -52,7 +53,7 @@ app.use('/api/articles', articles);
 app.use('/api/admin', admin);
 
 // maybe edit
-app.get('*', (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '/dist/sly-sports/index.html'))
 })
 

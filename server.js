@@ -28,7 +28,7 @@ mongoose.connection.on('error', (err) => {
 
 const app = express();
 
-var distDir = __dirname + "/dist/sly-sports/";
+var distDir = __dirname + "/dist/";
 app.use(express.static(distDir));
 
 //Port Number

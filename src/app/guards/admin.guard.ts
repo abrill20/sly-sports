@@ -1,4 +1,4 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Router, CanActivate } from '@angular/router';
 import { AuthService } from '../services/auth.service';
 
@@ -9,18 +9,8 @@ import { AuthService } from '../services/auth.service';
 
     constructor(private authService: AuthService, private router: Router) {}
 
-    async ngOnInit() {
-      // await this.authService.getProfile().subscribe(profile => {
-      //   this.user = profile.user;
-      // },
-      // err => {
-      //   console.log(err);
-      //   return false;
-      // })
-      
-    }
-    canActivate() {
-      this.authService.getProfile().subscribe(profile => {
+    async canActivate() {
+      await this.authService.getProfile().subscribe(profile => {
         this.user = profile.user;
       },
       err => {

@@ -9,8 +9,8 @@ import { AuthService } from '../services/auth.service';
 
     constructor(private authService: AuthService, private router: Router) {}
 
-    ngOnInit() {
-      this.authService.getProfile().subscribe(profile => {
+    async ngOnInit() {
+      await this.authService.getProfile().subscribe(profile => {
         this.user = profile.user;
       },
       err => {

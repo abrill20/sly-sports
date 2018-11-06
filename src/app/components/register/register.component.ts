@@ -3,6 +3,7 @@ import { ValidateService } from '../../services/validate.service';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -12,23 +13,25 @@ import { MatSnackBar } from '@angular/material';
 export class RegisterComponent implements OnInit {
   username: String;
   password: String;
+  registerForm: FormGroup
 
-  constructor(private validateService: ValidateService, private authService: AuthService, private router: Router, private snackBar: MatSnackBar) { }
+  constructor(private fb: FormBuilder, private validateService: ValidateService, private authService: AuthService, private router: Router, private snackBar: MatSnackBar) { 
+    this.registerForm = this.fb.group({
+      username: ['', [Validators.required, Validators.minLength(4)]],
+      password: ['', [Validators.required, Validators.minLength(8)]],
+    });
+  }
 
   ngOnInit() {
   }
 
-  onRegisterSubmit() {
+  onRegisterSubmit(username, password) {
     const user = {
-      username: this.username,
-      password: this.password
+      username: username,
+      password: password
     }
-    if(!this.validateService.validateRegister(user)) {
-      console.log('Please Fill in all fields');
-      this.snackBar.open('Please Fill in all fields', 'OK', {
-        duration: 3000
-      });
-      return false;
+    if(this.registerForm.dirty) {
+      
     }
     //Register User
     this.authService.registerUser(user).subscribe(data => {

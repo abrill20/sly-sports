@@ -38,7 +38,14 @@ export class RegisterComponent implements OnInit {
         this.snackBar.open('You are now registered', 'OK', {
           duration: 3000
         });
-      } else {
+      } else if(data.msg == 'Username taken') {
+        console.log("Username taken");
+        this.router.navigate(['/register']);
+        this.snackBar.open('Error, Username already taken', 'OK', {
+          duration: 3000
+        });
+      }
+      else {
         console.log("you are not registered, something went wrong");
         this.router.navigate(['/register']);
         this.snackBar.open('Error, please try again', 'OK', {

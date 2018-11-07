@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
 import { map } from 'rxjs/operators';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 import { JwtHelperService } from '@auth0/angular-jwt';
@@ -15,28 +14,27 @@ export class AdminService {
   user: any;
   helper = new JwtHelperService();
 
-  //uri = 'http://localhost:8080/'; //for Dev
-  uri = '' // for prod
+  uri = 'http://localhost:8080/'; //for Dev
+  //uri = '' // for prod
 
 
-  constructor(private http: Http, private httpClient: HttpClient,private jwtHelper: JwtHelperService, private router: Router) { }
+  constructor(private httpClient: HttpClient,private jwtHelper: JwtHelperService, private router: Router) { }
 
   getHeaders() {
-    let headers = new Headers();
     this.loadToken();
-    headers.append('Authorization', this.authToken);
-    headers.append('Content-Type', 'application/json');
+    let headers = new HttpHeaders()
+    .set('Authorization', this.authToken).set('Content-Type', 'application/json')
     return headers;
   }
 
   getArticles() {
     let headers = this.getHeaders();
-    return this.httpClient.get(`${this.uri}api/admin`)
+    return this.httpClient.get(`${this.uri}api/admin`, {headers: headers})
   }
 
   getArticleById(id) {
     let headers = this.getHeaders();
-    return this.http.get(`${this.uri}api/admin/${id}`, {headers: headers})
+    return this.httpClient.get(`${this.uri}api/admin/${id}`, {headers: headers})
   }
 
   addArticle(title, author, content, sampleContent, imageURL) {
@@ -48,7 +46,7 @@ export class AdminService {
       sampleContent: sampleContent,
       imageURL: imageURL
     };
-    return this.http.post(`${this.uri}api/admin/add`, article, {headers: headers})
+    return this.httpClient.post(`${this.uri}api/admin/add`, article, {headers: headers})
   }
 
   updateArticle(id, title, author, content, sampleContent, imageURL) {
@@ -60,17 +58,16 @@ export class AdminService {
       sampleContent: sampleContent,
       imageURL: imageURL
     };
-    return this.http.post(`${this.uri}api/admin/update/${id}`, article, {headers: headers})
+    return this.httpClient.post(`${this.uri}api/admin/update/${id}`, article, {headers: headers})
   }
 
   deleteArticle(id) {
     let headers = this.getHeaders();
-    return this.http.get(`${this.uri}api/admin/delete/${id}`, {headers:headers})
+    return this.httpClient.get(`${this.uri}api/admin/delete/${id}`, {headers:headers})
   }
 
   loadToken(){
     const token = localStorage.getItem('id_token');
     this.authToken = token;
-    console.log("token is : ", this.authToken);
   }
 }

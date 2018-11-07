@@ -29,7 +29,6 @@ router.get('/:id', (req, res) => {
 
 router.post('/:id', (req, res) => {
   console.log(`${req.method} articles${req.url} ${req.httpVersion}`);
-  console.log(`comment is ${req.body.comment}`)
   const comment = req.body.comment;
   const username = req.body.username;
   Article.update({ _id: req.params.id }, { $push: { comments: {msg: comment, username: username} } }, function (err, article) {

@@ -6,8 +6,11 @@ const config = require('../config/database');
 
 module.exports = function(passport) {
   let opts = {};
-  opts.jwtFromRequest = ExtractJwt.fromAuthHeaderWithScheme("jwt")
+  //Look for JWT in authorization header
+  opts.jwtFromRequest = 
+  ExtractJwt.fromAuthHeaderWithScheme("jwt")
   opts.secretOrKey = config.secret;
+  //jwt_payload contains decoded JWT payload
   passport.use(new JwtStrategy(opts, (jwt_payload, done) => {
     User.getUserById(jwt_payload._id, (err, user) => {
       if(err) {

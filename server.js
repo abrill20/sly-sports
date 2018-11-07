@@ -3,11 +3,11 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const passport = require('passport');
+const path = require('path')
 
 const users = require('./routes/users');
 const articles = require('./routes/articles');
 const admin = require('./routes/admin');
-const path = require('path')
 
 const config = require('./config/database');
 

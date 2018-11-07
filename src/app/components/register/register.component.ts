@@ -31,7 +31,7 @@ export class RegisterComponent implements OnInit {
       password: password
     }
     //Register User
-    this.authService.registerUser(user).subscribe(data => {
+    this.authService.registerUser(user).subscribe((data:any) => {
       if(data.success) {
         console.log("you are now registered");
         this.router.navigate(['/articles']);

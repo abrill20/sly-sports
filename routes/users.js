@@ -9,14 +9,16 @@ const User = require('../models/User');
 // Register
 router.post('/register', (req, res, next) => {
   console.log(`${req.method} ${req.url} ${req.httpVersion}`);
+  // Build user object
   let newUser = new User({
     username: req.body.username,
     password: req.body.password
   });
-  //make sure username not taken
+  // Make sure username not taken
   User.getUserByUsername(newUser.username, (err, user) => {
     if(err) throw err;
     if(!user){
+      // If username not taken, add user
       User.addUser(newUser, (err, user) => {
         if(err){
           res.json({success: false, msg:'Failed to register user'});
@@ -35,13 +37,12 @@ router.post('/authenticate', (req, res, next) => {
   console.log(`${req.method} ${req.url} ${req.httpVersion}`);
   const username = req.body.username;
   const password = req.body.password;
-
   User.getUserByUsername(username, (err, user) => {
     if(err) throw err;
     if(!user){
       return res.json({success: false, msg: 'User not found'});
     }
-
+    // Make sure password matches
     User.comparePassword(password, user.password, (err, isMatch) => {
       if(err) throw err;
       if(isMatch){
@@ -49,7 +50,7 @@ router.post('/authenticate', (req, res, next) => {
         const token = jwt.sign(user.toJSON(), config.secret, {
           expiresIn: 604800 // 1 week
         });
-
+        //Send token in response
         res.json({
           success: true,
           token: 'JWT '+token,

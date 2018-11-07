@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
-import { Http, Headers } from '@angular/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Router } from '@angular/router';
 import { map } from 'rxjs/operators';
 
@@ -9,23 +8,23 @@ import { map } from 'rxjs/operators';
 })
 export class ArticleService {
 
-  //uri = 'http://localhost:8080/';
-  uri = '' // for prod
+  uri = 'http://localhost:8080/';
+  //uri = '' // for prod
 
-  constructor(private http: Http, private httpPost: Http, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   getArticles() {
-    return this.http.get(`${this.uri}api/articles`).pipe(map(res => res.json()));;
+    return this.http.get(`${this.uri}api/articles`)
   }
 
   getArticleById(id) {
-    return this.http.get(`${this.uri}api/articles/${id}`);
+    return this.http.get(`${this.uri}api/articles/${id}`)
   }
 
-  addComment(id, comment, username) {
-    let headers = new Headers(); //this will be used to make sure only logged in users can comment
-    return this.http.post(`${this.uri}api/articles/${id}`, {comment: comment, username: username}, {})
-      .pipe(map(res => res.json()));
+  addComment(id, comment, user) {
+    let headers = new HttpHeaders(); //this will be used to make sure only logged in users can comment
+    let username = user.user.username;
+    return this.http.post(`${this.uri}api/articles/${id}`, {comment: comment, username: username})
   }
 
 }

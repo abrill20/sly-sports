@@ -6,12 +6,7 @@ const passport = require('passport');
 const Article = require('../models/Article');
 const User = require('../models/User');
 
-// router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res, next) => {
-//   console.log(`${req.method} ${req.url} ${req.httpVersion}`);
-//   res.json({user: req.user});
-// });
-
-router.get('/', (req,res) => {
+router.get('/', passport.authenticate('jwt', {session:false}), (req,res) => {
   console.log(`${req.method} admin${req.url} ${req.httpVersion}`);
   Article.find((err, articles)=> {
     if(err) 

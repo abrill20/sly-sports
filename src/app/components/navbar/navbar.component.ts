@@ -30,8 +30,9 @@ export class NavbarComponent implements OnInit {
       password: password
     }
 
-    this.authService.authenticateUser(user).subscribe(data => {
+    this.authService.authenticateUser(user).subscribe((data: any) => {
       if(data.success) {
+        console.log("success");
         this.authService.storeUserData(data.token, data.user);
         this.snackBar.open('You are now logged in', 'OK', {
           duration: 3000

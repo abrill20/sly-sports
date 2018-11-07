@@ -7,7 +7,7 @@ import { AuthService } from '../services/auth.service';
 
     user:any;
     constructor(private authService: AuthService, private router: Router) {
-      this.authService.getProfile().subscribe(profile => {
+      this.authService.getProfile().subscribe((profile:any) => {
         this.user = profile.user;
       },
       err => {

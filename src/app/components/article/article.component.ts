@@ -3,7 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Article } from '../../article.model';
 import { ArticleService } from '../../services/article.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { MatFormFieldModule, MatInputModule, MatButtonModule, MatCardModule, MatTableModule, MatDividerModule, MatSnackBarModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatButtonModule } from '@angular/material';
 import { AuthService } from '../../services/auth.service';
 
 @Component({
@@ -30,12 +30,13 @@ export class ArticleComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.id = params.id;
       this.articleService.getArticleById(this.id).subscribe(res => {
-        this.article = res.json();
+        this.article = res;
         this.comments = this.article.comments;
       });
     });
     this.authService.getProfile().subscribe(res => {
-      this.user = res.user.username;
+      this.user = res;
+      
     },
     err => {
       console.log(err);

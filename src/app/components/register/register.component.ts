@@ -17,7 +17,7 @@ export class RegisterComponent implements OnInit {
 
   constructor(private fb: FormBuilder, private validateService: ValidateService, private authService: AuthService, private router: Router, private snackBar: MatSnackBar) { 
     this.registerForm = this.fb.group({
-      username: ['', [Validators.required, Validators.minLength(4)]],
+      username: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(30)]],
       password: ['', [Validators.required, Validators.minLength(8)]],
     });
   }
@@ -29,9 +29,6 @@ export class RegisterComponent implements OnInit {
     const user = {
       username: username,
       password: password
-    }
-    if(this.registerForm.dirty) {
-      
     }
     //Register User
     this.authService.registerUser(user).subscribe(data => {

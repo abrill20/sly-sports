@@ -13,6 +13,15 @@ router.post('/register', (req, res, next) => {
     username: req.body.username,
     password: req.body.password
   });
+  //make sure username not taken
+  User.getUserByUsername(newUser.username, (err, user) => {
+    if(err) throw err;
+    if(!user){
+
+    } else {
+      return res.json({success: false, msg: 'Username taken'});
+    }
+  }); 
 
   User.addUser(newUser, (err, user) => {
     if(err){

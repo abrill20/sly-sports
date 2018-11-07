@@ -9,8 +9,8 @@ import { AuthService } from '../services/auth.service';
 
     constructor(private authService: AuthService, private router: Router) {}
 
-    async canActivate() {
-      await this.authService.getProfile().subscribe(profile => {
+    canActivate() {
+      this.authService.getProfile().subscribe(profile => {
         this.user = profile.user;
       },
       err => {

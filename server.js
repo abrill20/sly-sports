@@ -13,7 +13,8 @@ const config = require('./config/database');
 
 // Connect to database
 mongoose.connect(process.env.MONGODB_URI || config.database, {
-  useMongoClient: true
+  // useMongoClient: true
+  useNewUrlParser: true
 });
 
 // On Connection

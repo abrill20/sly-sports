@@ -67,7 +67,11 @@ router.post('/authenticate', (req, res, next) => {
 });
 
 // Profile
-router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res, next) => {
+// router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res, next) => {
+//   console.log(`${req.method} ${req.url} ${req.httpVersion}`);
+//   res.json({user: req.user});
+// });
+router.get('/profile', (req, res, next) => {
   console.log(`${req.method} ${req.url} ${req.httpVersion}`);
   res.json({user: req.user});
 });

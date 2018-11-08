@@ -13,7 +13,7 @@ import { AuthService } from '../services/auth.service';
 
       let prof = await this.authService.getProfile();
       console.log("IN PROF ", prof);
-      prof.subscribe( async (profile: any) => {
+      async () => await prof.subscribe(async (profile: any) => {
         this.user = await profile.user;
         console.log(this.user);
       },

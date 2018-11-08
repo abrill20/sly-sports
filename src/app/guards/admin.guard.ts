@@ -22,6 +22,8 @@ import { AuthService } from '../services/auth.service';
           return false;
       });
       console.log("Does async work? ", this.user);
+      if(this.user.privileges == 'admin')
       return true;
+      else return false;
     }
   }

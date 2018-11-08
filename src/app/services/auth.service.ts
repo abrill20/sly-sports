@@ -33,9 +33,9 @@ export class AuthService {
     return this.http.post(`${this.uri}api/users/authenticate`, user, { headers: headers })
   }
 
-  getProfile() {
+  async getProfile() {
     this.loadToken();
-    let headers = new HttpHeaders()
+    let headers = await new HttpHeaders()
       .set('Authorization', this.authToken).set('Content-Type', 'application/json');
     console.log(headers);
     this.http.get(`${this.uri}api/users/profile`, { headers: headers })

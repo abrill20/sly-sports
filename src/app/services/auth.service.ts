@@ -37,18 +37,7 @@ export class AuthService {
     this.loadToken();
     let headers = await new HttpHeaders()
       .set('Authorization', this.authToken).set('Content-Type', 'application/json');
-    console.log(headers);
-    this.http.get(`${this.uri}api/users/profile`, { headers: headers })
-    .subscribe((profile: any) => {
-      this.user = profile.user;
-      console.log("the user ", this.user);
-    },
-      err => {
-        console.log(err);
-        return false;
-      })
-    console.log("MY USER IS ", this.user);
-    return this.user;
+    return this.http.get(`${this.uri}api/users/profile`, { headers: headers })
   }
 
   isAdmin(user) {

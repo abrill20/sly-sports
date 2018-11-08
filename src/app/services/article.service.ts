@@ -8,8 +8,8 @@ import { map } from 'rxjs/operators';
 })
 export class ArticleService {
 
-  uri = 'http://localhost:8080/';
-  //uri = '' // for prod
+  //uri = 'http://localhost:8080/';
+  uri = '' // for prod
 
   constructor(private http: HttpClient, private router: Router) { }
 

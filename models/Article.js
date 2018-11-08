@@ -28,7 +28,7 @@ const ArticleSchema = mongoose.Schema({
     }
   } ],
   likes: {
-    type: int
+    type: String
   }
 });
 
@@ -45,4 +45,8 @@ module.exports.addArticle = function (newArticle, callback) {
 module.exports.getArticleByTitle = function (title, callback) {
   const query = { title: title }
   Article.findOne(query, callback);
+}
+
+module.exports.addLike = function(articleId,userId) {
+  this.getArticleById(articleId);
 }

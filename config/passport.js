@@ -8,7 +8,7 @@ module.exports = function(passport) {
   let opts = {};
   //Look for JWT in authorization header
   opts.jwtFromRequest = 
-  ExtractJwt.fromAuthHeaderWithScheme("jwt")
+  ExtractJwt.fromAuthHeaderAsBearerToken();
   opts.secretOrKey = config.secret;
   //jwt_payload contains decoded JWT payload
   passport.use(new JwtStrategy(opts, (jwt_payload, done) => {

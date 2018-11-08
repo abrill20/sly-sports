@@ -37,6 +37,7 @@ export class AuthService {
     this.loadToken();
     let headers = await new HttpHeaders()
       .set('Authorization', this.authToken).set('Content-Type', 'application/json');
+    console.log("Headers are ", headers);
     return this.http.get(`${this.uri}api/users/profile`, { headers: headers })
   }
 

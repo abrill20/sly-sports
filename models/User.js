@@ -13,7 +13,8 @@ const UserSchema = mongoose.Schema({
   },
   privileges: {
     type: String,
-  }
+  },
+  likedArticles: [{type: String}]
 });
 
 const User = module.exports = mongoose.model('User', UserSchema);

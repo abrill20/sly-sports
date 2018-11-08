@@ -26,7 +26,10 @@ const ArticleSchema = mongoose.Schema({
     username: {
       type: String
     }
-  } ]
+  } ],
+  likes: {
+    type: int
+  }
 });
 
 const Article = module.exports = mongoose.model('Article', ArticleSchema);

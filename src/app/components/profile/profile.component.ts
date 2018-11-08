@@ -13,8 +13,10 @@ export class ProfileComponent implements OnInit {
 
   constructor(private authService: AuthService, private router: Router) { }
 
-  ngOnInit() {
-    this.authService.getProfile().subscribe((profile:any) => {
+  async ngOnInit() {
+    let prof = await this.authService.getProfile()
+    
+    prof.subscribe((profile:any) => {
       this.user = profile.user;
       console.log(this.user);
     },

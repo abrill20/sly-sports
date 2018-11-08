@@ -73,6 +73,7 @@ router.post('/authenticate', (req, res, next) => {
 // });
 router.get('/profile', (req, res, next) => {
   console.log(`${req.method} ${req.url} ${req.httpVersion}`);
+  console.log("req is ", req.headers);
   res.json({user: req.user});
 });
 

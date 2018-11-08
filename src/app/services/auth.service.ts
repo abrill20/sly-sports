@@ -13,39 +13,49 @@ export class AuthService {
   authToken: any;
   user: any;
   helper = new JwtHelperService();
-  
 
-   //uri = 'http://localhost:8080/';
+
+  //uri = 'http://localhost:8080/';
   uri = '' // for prod
 
   constructor(private http: HttpClient, private jwtHelper: JwtHelperService, private router: Router) { }
 
-  
+
   registerUser(user) {
     let headers = new HttpHeaders()
-    .set('Content-Type', 'application/json');
-    return this.http.post(`${this.uri}api/users/register`, user, {headers: headers})
+      .set('Content-Type', 'application/json');
+    return this.http.post(`${this.uri}api/users/register`, user, { headers: headers })
   }
 
   authenticateUser(user) {
     let headers = new HttpHeaders()
-    .set('Content-Type', 'application/json');
-    return this.http.post(`${this.uri}api/users/authenticate`, user, {headers: headers})
+      .set('Content-Type', 'application/json');
+    return this.http.post(`${this.uri}api/users/authenticate`, user, { headers: headers })
   }
 
   getProfile() {
     this.loadToken();
     let headers = new HttpHeaders()
-    .set('Authorization', this.authToken).set('Content-Type', 'application/json');
+      .set('Authorization', this.authToken).set('Content-Type', 'application/json');
     console.log(headers);
-    return this.http.get(`${this.uri}api/users/profile`, {headers: headers})
+    this.http.get(`${this.uri}api/users/profile`, { headers: headers })
+    .subscribe((profile: any) => {
+      this.user = profile.user;
+      console.log(this.user);
+    },
+      err => {
+        console.log(err);
+        return false;
+      })
+    console.log("MY USER IS ", this.user);
+    return this.user;
   }
 
   isAdmin(user) {
-    if(!user) {
+    if (!user) {
       return false;
     }
-    if(user.privileges == 'admin') {
+    if (user.privileges == 'admin') {
       return true;
     }
     return false;
@@ -58,16 +68,16 @@ export class AuthService {
     this.user = user;
   }
 
-  loadToken(){
+  loadToken() {
     const token = localStorage.getItem('id_token');
     this.authToken = token;
   }
 
-  loggedIn(){
+  loggedIn() {
     const token = this.jwtHelper.tokenGetter();
     if (!token) return false;
     return !this.jwtHelper.isTokenExpired();
-   }
+  }
 
   logout() {
     this.authToken = null;

@@ -25,21 +25,8 @@ export class ProfileComponent implements OnInit {
     //   return false;
     // })
     // console.log(this.user);
-    this.getSomething().subscribe(result => {
-      this.user = result;
-      console.log("user is ", this.user)
-    })
-  }
-
-  getSomething() {
-    return this.authService.getProfile().map(result => {
-      this.user = result
-      console.log("getsome user is ", this.user);
-    },
-    err => {
-      console.log(err);
-      return false;
-    })
+    this.user = this.authService.getProfile();
+    console.log("IN PROF ", this.user);
   }
 
 }

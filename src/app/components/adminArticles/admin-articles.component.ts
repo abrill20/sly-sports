@@ -20,13 +20,13 @@ export class AdminArticlesComponent implements OnInit {
   constructor(private adminService: AdminService, private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
-    this.authService.getProfile().subscribe((profile:any) => {
-      this.user = profile.user;
-    },
-    err => {
-      console.log(err);
-      return false;
-    })
+    // this.authService.getProfile().subscribe((profile:any) => {
+    //   this.user = profile.user;
+    // },
+    // err => {
+    //   console.log(err);
+    //   return false;
+    // })
     
 
     this.fetchArticles();

@@ -34,14 +34,14 @@ export class ArticleComponent implements OnInit {
         this.comments = this.article.comments;
       });
     });
-    this.authService.getProfile().subscribe(res => {
-      this.user = res;
+    // this.authService.getProfile().subscribe(res => {
+    //   this.user = res;
       
-    },
-    err => {
-      console.log(err);
-      return false;
-    })
+    // },
+    // err => {
+    //   console.log(err);
+    //   return false;
+    // })
   }
 
   addComment(comment) {

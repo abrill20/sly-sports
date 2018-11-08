@@ -41,7 +41,7 @@ export class AuthService {
     this.http.get(`${this.uri}api/users/profile`, { headers: headers })
     .subscribe((profile: any) => {
       this.user = profile.user;
-      console.log(this.user);
+      console.log("the user ", this.user);
     },
       err => {
         console.log(err);

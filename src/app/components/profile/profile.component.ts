@@ -13,7 +13,7 @@ export class ProfileComponent implements OnInit {
 
   constructor(private authService: AuthService, private router: Router) { }
 
-  ngOnInit() {
+  async ngOnInit() {
     // let prof = await this.authService.getProfile()
     // console.log(prof);
     // prof.subscribe((profile:any) => {
@@ -25,7 +25,7 @@ export class ProfileComponent implements OnInit {
     //   return false;
     // })
     // console.log(this.user);
-    this.user = this.authService.getProfile();
+    this.user = await this.authService.getProfile();
     console.log("IN PROF ", this.user);
   }
 

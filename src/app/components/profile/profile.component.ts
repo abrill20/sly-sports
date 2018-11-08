@@ -28,8 +28,9 @@ export class ProfileComponent implements OnInit {
     let prof = await this.authService.getProfile();
     console.log("IN PROF ", prof);
     prof.subscribe((profile: any) => {
-      this.user = profile.headers;
+      this.user = profile.user;
       console.log(this.user);
+      console.log(profile.headers);
     },
       err => {
         console.log(err);

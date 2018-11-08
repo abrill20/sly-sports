@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Router } from '@angular/router';
-import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -23,7 +22,7 @@ export class ArticleService {
 
   addComment(id, comment, user) {
     let headers = new HttpHeaders(); //this will be used to make sure only logged in users can comment
-    let username = user.user.username;
+    let username = user.username;
     return this.http.post(`${this.uri}api/articles/${id}`, {comment: comment, username: username})
   }
 

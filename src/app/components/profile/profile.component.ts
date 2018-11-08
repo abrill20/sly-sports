@@ -34,7 +34,7 @@ export class ProfileComponent implements OnInit {
       err => {
         console.log(err);
         return false;
-      })
+      });
   }
 
 }

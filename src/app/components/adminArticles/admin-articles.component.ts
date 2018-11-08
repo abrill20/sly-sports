@@ -19,7 +19,7 @@ export class AdminArticlesComponent implements OnInit {
 
   constructor(private adminService: AdminService, private authService: AuthService, private router: Router) { }
 
-  ngOnInit() {
+  async ngOnInit() {
     // this.authService.getProfile().subscribe((profile:any) => {
     //   this.user = profile.user;
     // },
@@ -27,6 +27,16 @@ export class AdminArticlesComponent implements OnInit {
     //   console.log(err);
     //   return false;
     // })
+    let prof = await this.authService.getProfile();
+    console.log("IN PROF ", prof);
+    prof.subscribe((profile: any) => {
+      this.user = profile.user;
+      console.log(this.user);
+    },
+      err => {
+        console.log(err);
+        return false;
+      });
     
 
     this.fetchArticles();

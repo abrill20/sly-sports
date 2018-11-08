@@ -26,7 +26,18 @@ export class ArticleComponent implements OnInit {
     });
    }
 
-  ngOnInit() {
+  async ngOnInit() {
+    let prof = await this.authService.getProfile();
+    console.log("IN PROF ", prof);
+    prof.subscribe((profile: any) => {
+      this.user = profile.user;
+      console.log(this.user);
+    },
+      err => {
+        console.log(err);
+        return false;
+      });
+
     this.route.params.subscribe(params => {
       this.id = params.id;
       this.articleService.getArticleById(this.id).subscribe(res => {

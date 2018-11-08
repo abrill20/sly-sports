@@ -70,7 +70,7 @@ export function tokenGetter() {
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
-        whitelistedDomains: ['localhost:4200', 'https://sly-sports.herokuapp.com/']
+        whitelistedDomains: ['localhost:4200', 'https://sly-sports.herokuapp.com']
       }
     }),
   ],

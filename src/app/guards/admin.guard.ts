@@ -13,16 +13,15 @@ import { AuthService } from '../services/auth.service';
 
       let prof = await this.authService.getProfile();
       console.log("IN PROF ", prof);
-      prof.subscribe((profile: any) => {
-        this.user = profile.user;
+      prof.subscribe( async (profile: any) => {
+        this.user = await profile.user;
         console.log(this.user);
       },
         err => {
           console.log(err);
           return false;
       });
-      if(this.authService.isAdmin(this.user)) {
-        return true;
-      } else return false;
+      console.log("Does async work? ", this.user);
+      return true;
     }
   }

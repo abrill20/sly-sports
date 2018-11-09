@@ -20,18 +20,9 @@ export class AdminArticlesComponent implements OnInit {
   constructor(private adminService: AdminService, private authService: AuthService, private router: Router) { }
 
   async ngOnInit() {
-    // this.authService.getProfile().subscribe((profile:any) => {
-    //   this.user = profile.user;
-    // },
-    // err => {
-    //   console.log(err);
-    //   return false;
-    // })
     let prof = await this.authService.getProfile();
-    console.log("IN PROF ", prof);
     prof.subscribe((profile: any) => {
       this.user = profile.user;
-      console.log(this.user);
     },
       err => {
         console.log(err);
@@ -43,15 +34,11 @@ export class AdminArticlesComponent implements OnInit {
   }
 
   fetchArticles() {
-    var myarticles
     this.adminService
       .getArticles()
       .subscribe((data: Article[]) => {
-        console.log("data is", data)
         this.articles = data;
-        console.log('Data Requested ...');
     })
-    console.log("my articles are: ", this.articles);
   }
 
   editArticle(id) {

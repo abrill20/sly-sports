@@ -11,7 +11,6 @@ router.route('/').get((req, res) => {
     if (err)
       console.log(err);
     else {
-      console.log("here are the articles");
       res.json(articles);
     }
   });
@@ -33,8 +32,7 @@ router.post('/:id', (req, res) => {
   const username = req.body.username;
   Article.update({ _id: req.params.id }, { $push: { comments: {msg: comment, username: username} } }, function (err, article) {
      if (err) {
-       console.log('not success');
-       console.log(err);
+       console.log('unsuccessful');
        res.json(err);
      } else {
        console.log('Comment success');

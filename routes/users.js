@@ -71,11 +71,5 @@ router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res,
   console.log(`${req.method} ${req.url} ${req.httpVersion}`);
   res.json({user: req.user, headers: req.headers});
 });
-// router.get('/profile', (req, res, next) => {
-//   console.log(`${req.method} ${req.url} ${req.httpVersion}`);
-//   console.log("req is ", req.headers);
-  
-//   res.json({headers: req.headers});
-// });
 
 module.exports = router;

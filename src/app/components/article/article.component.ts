@@ -3,8 +3,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Article } from '../../article.model';
 import { ArticleService } from '../../services/article.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { MatFormFieldModule, MatInputModule, MatButtonModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatButtonModule, MatSnackBar } from '@angular/material';
 import { AuthService } from '../../services/auth.service';
+
 
 @Component({
   selector: 'app-article',
@@ -20,7 +21,7 @@ export class ArticleComponent implements OnInit {
   url = 'http://localhost:4200/articles';
   user: Object;
 
-  constructor(private authService: AuthService,private articleService: ArticleService, private router: Router, private route: ActivatedRoute, private fb: FormBuilder) {
+  constructor(private authService: AuthService,private articleService: ArticleService, private router: Router, private route: ActivatedRoute, private fb: FormBuilder, private snackBar: MatSnackBar) {
     this.commentForm = this.fb.group({
       comment: ''
     });
@@ -28,10 +29,8 @@ export class ArticleComponent implements OnInit {
 
   async ngOnInit() {
     let prof = await this.authService.getProfile();
-    console.log("IN PROF ", prof);
     prof.subscribe((profile: any) => {
       this.user = profile.user;
-      console.log(this.user);
     },
       err => {
         console.log(err);
@@ -44,20 +43,22 @@ export class ArticleComponent implements OnInit {
         this.article = res;
         this.comments = this.article.comments;
       });
+    },
+    err => {
+      console.log(err);
+      return false;
     });
-    // this.authService.getProfile().subscribe(res => {
-    //   this.user = res;
-      
-    // },
-    // err => {
-    //   console.log(err);
-    //   return false;
-    // })
   }
 
   addComment(comment) {
     this.articleService.addComment(this.id, comment, this.user).subscribe(() => {
       this.router.navigate([`/articles`]);
+    },
+    err => {
+      console.log(err);
+      this.snackBar.open('Comment Unsuccessful', 'OK', {
+        duration: 3000
+      });
     });
   }
 

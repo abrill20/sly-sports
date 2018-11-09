@@ -28,7 +28,6 @@ router.get('/:id', passport.authenticate('jwt', {session:false}), (req,res) => {
 
 router.post('/add', passport.authenticate('jwt', {session:false}), (req,res) => {
   console.log(`${req.method} admin${req.url} ${req.httpVersion}`);
-  console.log(`body is ${req.body}`);
   let article = new Article(req.body);
   Article.addArticle(article, (err, article) => {
     if(err){

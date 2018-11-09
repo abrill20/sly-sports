@@ -28,9 +28,6 @@ export class ArticlesComponent implements OnInit {
       .getArticles()
        .subscribe((data: Article[]) => {
          this.articles = data;
-         console.log('Data Requested ...');
-         console.log(this.articles)
-        
        })
   }
 

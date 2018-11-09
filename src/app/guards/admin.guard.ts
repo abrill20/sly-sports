@@ -14,14 +14,11 @@ import { AuthService } from '../services/auth.service';
       let first = await this.authService.getProfile();
       first.subscribe((profile: any) => {
         this.user = profile.user;
-        console.log(this.user);
-        console.log(profile.headers);
       },
         err => {
           console.log(err);
           return false;
         });
-      console.log(this.user);
       return true;
     }
   }

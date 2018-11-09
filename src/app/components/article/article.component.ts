@@ -51,14 +51,17 @@ export class ArticleComponent implements OnInit {
   }
 
   addComment(comment) {
+    if(!this.user) {
+      this.snackBar.open('Comment Unsuccessful', 'OK', {
+      duration: 3000
+    });
+
+    }
     this.articleService.addComment(this.id, comment, this.user).subscribe(() => {
       this.router.navigate([`/articles`]);
     },
     err => {
       console.log(err);
-      this.snackBar.open('Comment Unsuccessful', 'OK', {
-        duration: 3000
-      });
     });
   }
 

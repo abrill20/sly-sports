@@ -8,23 +8,9 @@ import { AuthService } from '../services/auth.service';
     user:any;
 
     constructor(private authService: AuthService, private router: Router) {
-      // this.authService.getProfile().subscribe((profile:any) => {
-      //   this.user = profile.user;
-      // },
-      // err => {
-      //   console.log(err);
-      //   return false;
-      // })
     }
 
     canActivate() {
-      // console.log(this.user);
-      // if(this.authService.loggedIn()) {
-      //   return true;
-      // } else {
-      //   this.router.navigate(['/articles']);
-      //   return false;
-      // }
       return true;
 
     }

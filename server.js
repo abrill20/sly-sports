@@ -61,6 +61,12 @@ app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '/dist/index.html'))
 })
 
+// For contact forms
+app.post('/incoming_mail', (req, res) => {
+  console.log(req.user);
+})
+
+
 app.listen(httpPort, () => {
   console.log(`HTTP server up on port ${httpPort}`)
 })

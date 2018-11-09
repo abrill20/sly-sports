@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MailService } from '../../services/mail.service'
 
 @Component({
   selector: 'app-contact',
@@ -11,7 +12,7 @@ export class ContactComponent implements OnInit {
 
   createForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private router: Router) {
+  constructor(private fb: FormBuilder, private router: Router, private mailService: MailService) {
     this.createForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', Validators.required],
@@ -22,6 +23,10 @@ export class ContactComponent implements OnInit {
 
 
   ngOnInit() {
+  }
+
+  onContactSubmit(name, email, subject, message) {
+    this.mailService.sendEmail();
   }
 
 }

@@ -31,7 +31,9 @@ import { AdminService } from './services/admin.service';
 import { ValidateService } from './services/validate.service';
 import { AuthService } from './services/auth.service';
 import { ArticleService } from './services/article.service';
+import { MailService } from './services/mail.service';
 
+//Guards
 import { AuthGuard } from './guards/auth.guard';
 import { AdminGuard } from './guards/admin.guard';
 
@@ -75,7 +77,7 @@ export function tokenGetter() {
     }),
   ],
   schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA],
-  providers: [AdminService, ValidateService, AuthService, AuthGuard, ArticleService, AdminGuard],
+  providers: [AdminService, ValidateService, AuthService, MailService, AuthGuard, ArticleService, AdminGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

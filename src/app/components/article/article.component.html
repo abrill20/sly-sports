@@ -28,9 +28,10 @@
   </form>
   <br>
   <br>
-  <h5>Comments:</h5>
+  <h4>Comments:</h4>
+  <br>
   <div *ngFor="let comment of comments">
-    <li><strong>{{comment.username}}: </strong>{{comment.msg}}</li>
+    <mat-card class="mb-4"><strong>{{comment.username}}: </strong>{{comment.msg}}</mat-card>
   </div>
   <br><br>
 </div>

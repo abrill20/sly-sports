@@ -18,7 +18,7 @@ export class ArticleComponent implements OnInit {
   article: any;
   commentForm: FormGroup;
   comments: any;
-  url = 'http://localhost:4200/articles';
+  url = 'http://sly-sports.herokuapp.com/';
   user: Object;
 
   constructor(private authService: AuthService,private articleService: ArticleService, private router: Router, private route: ActivatedRoute, private fb: FormBuilder, private snackBar: MatSnackBar) {

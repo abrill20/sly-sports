@@ -13,10 +13,7 @@ import { AuthService } from '../services/auth.service';
     async canActivate() {
 
       this.prof = await this.authService.getProfile();
-      this.nextThing();
-      console.log("Does async work? ", this.user);
-      if(this.user.privileges == 'admin') return true;
-      else return false;
+      return await this.nextThing();
     }
 
     async nextThing() {
@@ -28,5 +25,7 @@ import { AuthService } from '../services/auth.service';
           console.log(err);
           return false;
         });
+      if(this.user.privileges == 'admin') return true;
+        else return false;
     }
   }

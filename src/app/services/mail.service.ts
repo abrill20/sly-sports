@@ -10,6 +10,7 @@ export class MailService {
 
   sendEmail() {
     let headers = new Headers()
+    console.log('posting')
     return this.http.post('incoming_mail', {user: {
       message: 'hello'
     }})

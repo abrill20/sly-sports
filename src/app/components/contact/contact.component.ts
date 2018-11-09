@@ -26,6 +26,7 @@ export class ContactComponent implements OnInit {
   }
 
   onContactSubmit(name, email, subject, message) {
+    console.log("clicked");
     this.mailService.sendEmail();
   }
 

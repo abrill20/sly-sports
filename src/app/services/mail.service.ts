@@ -11,7 +11,7 @@ export class MailService {
   sendEmail() {
     let headers = new Headers()
     console.log('posting')
-    this.http.post('incoming_mail', {user: {
+    return this.http.post('incoming_mail', {user: {
       message: 'hello'
     }});
   }

@@ -11,6 +11,7 @@ import { MailService } from '../../services/mail.service'
 export class ContactComponent implements OnInit {
 
   createForm: FormGroup;
+  email: any;
 
   constructor(private fb: FormBuilder, private router: Router, private mailService: MailService) {
     this.createForm = this.fb.group({
@@ -27,7 +28,14 @@ export class ContactComponent implements OnInit {
 
   onContactSubmit(name, email, subject, message) {
     console.log("clicked");
-    this.mailService.sendEmail();
+    this.mailService.sendEmail().subscribe((arg: any) => { 
+      this.email = arg
+    },
+      err => {
+        console.log(err);
+        return false;
+      });
+    
   }
 
 }

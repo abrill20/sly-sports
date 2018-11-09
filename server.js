@@ -63,6 +63,7 @@ app.get('/*', (req, res) => {
 
 // For contact forms
 app.post('/incoming_mail', (req, res) => {
+  console.log(`${req.method} articles${req.url} ${req.httpVersion}`);
   console.log(req.user);
 })
 

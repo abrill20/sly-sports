@@ -2,7 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
 
-A running version of the website can be found at 
+A running version of the website can be found at
+https://sly-sports.herokuapp.com
+
+To access admin features, first login with username
+abrill and password 123456, then navigate to 
+https://sly-sports.herokuapp.com/admin
+
+
 
 ## Development server
 

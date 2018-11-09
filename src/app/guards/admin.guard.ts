@@ -6,26 +6,22 @@ import { AuthService } from '../services/auth.service';
   export class AdminGuard implements CanActivate{
     
     user: any;
-    prof: any;
 
     constructor(private authService: AuthService, private router: Router) {}
 
     async canActivate() {
 
-      this.prof = await this.authService.getProfile();
-      return await this.nextThing();
-    }
-
-    async nextThing() {
-      await this.prof.subscribe((profile: any) => {
+      let first = await this.authService.getProfile();
+      let next = await first.subscribe((profile: any) => {
         this.user = profile.user;
         console.log(this.user);
+        console.log(profile.headers);
       },
         err => {
           console.log(err);
           return false;
         });
-      if(this.user.privileges == 'admin') return true;
-        else return false;
+      console.log(this.user);
+      return true;
     }
   }

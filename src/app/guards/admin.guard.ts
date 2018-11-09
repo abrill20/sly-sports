@@ -12,8 +12,8 @@ import { AuthService } from '../services/auth.service';
     async canActivate() {
 
       let first = await this.authService.getProfile();
-      let next = await first.subscribe(async (profile: any) => {
-        this.user = await profile.user;
+      await first.subscribe((profile: any) => {
+        this.user = profile.user;
         console.log(this.user);
         console.log(profile.headers);
       },

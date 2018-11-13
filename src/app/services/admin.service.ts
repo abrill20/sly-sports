@@ -5,6 +5,8 @@ import { Router } from '@angular/router';
 
 import { JwtHelperService } from '@auth0/angular-jwt';
 
+import { environment } from '../../environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -15,7 +17,8 @@ export class AdminService {
   helper = new JwtHelperService();
 
   //uri = 'http://localhost:8080/'; //for Dev
-  uri = '' // for prod
+  //uri = '' // for prod
+  uri = environment.apiURL;
 
 
   constructor(private httpClient: HttpClient,private jwtHelper: JwtHelperService, private router: Router) { }
@@ -29,6 +32,7 @@ export class AdminService {
 
   getArticles() {
     let headers = this.getHeaders();
+    console.log(environment.apiURL);
     return this.httpClient.get(`${this.uri}api/admin`, {headers: headers})
   }
 

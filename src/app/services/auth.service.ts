@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 import { JwtHelperService } from '@auth0/angular-jwt';
+import { environment } from '../../environments/environment';
 
 
 @Injectable({
@@ -15,7 +16,8 @@ export class AuthService {
 
 
   //uri = 'http://localhost:8080/';
-  uri = '' // for prod
+  //uri = '' // for prod
+  uri = environment.apiURL;
 
   constructor(private http: HttpClient, private jwtHelper: JwtHelperService, private router: Router) { }
 

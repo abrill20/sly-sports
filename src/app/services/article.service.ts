@@ -2,13 +2,17 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Router } from '@angular/router';
 
+import { environment } from '../../environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class ArticleService {
 
   //uri = 'http://localhost:8080/';
-  uri = '' // for prod
+  //uri = '' // for prod
+  uri = environment.apiURL;
+  
 
   constructor(private http: HttpClient, private router: Router) { }
 

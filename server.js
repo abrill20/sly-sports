@@ -3,11 +3,12 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const passport = require('passport');
-const path = require('path')
+const path = require('path');
 
 const users = require('./routes/users');
 const articles = require('./routes/articles');
 const admin = require('./routes/admin');
+const logger = require('./logging/logs');
 
 const config = require('./config/database');
 
@@ -54,17 +55,17 @@ app.use('/api/articles', articles);
 app.use('/api/admin', admin);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/dist/index.html'))
+  res.sendFile(path.join(__dirname, '/dist/sly-sports/index.html'))
 })
 
 app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/dist/index.html'))
+  res.sendFile(path.join(__dirname, '/dist/sly-sports/index.html'))
 })
 
 // For contact forms
 app.post('/incoming_mail', (req, res) => {
   console.log(`${req.method} articles${req.url} ${req.httpVersion}`);
-  console.log(req.body.user);
+  logger.info(`User is ${req.body.user}`);
   res.send(req.body.user);
 })
 
@@ -72,3 +73,5 @@ app.post('/incoming_mail', (req, res) => {
 app.listen(httpPort, () => {
   console.log(`HTTP server up on port ${httpPort}`)
 })
+
+module.exports.app = app;

@@ -64,20 +64,4 @@ logger.debug(`A debug level message: a:${a} b:${b}`);
 var sum = a + b;
 logger.info(`An info level message: sum:${sum}`);
 
-
-// Throw an exception which should be logged by winston's exception handler
-try{
-  throw "A handled exception being thrown by the application";
-}
-catch(err) {
-  console.log('Exception caught');
-  // Force winston to log the exception as an uncaughtException
-  // This is a workaround and could be confusing when reviewing logs
-  process.emit('uncaughtException', err);
-}
-
-console.log("Got past handled exception");
-
-throw "An unhandled exception being thrown";
-
-console.log("Does this message ever appear?");
+module.exports = logger;

@@ -4,12 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build": "ng build --prod",
+    "build": "ng build",
     "test": "mocha './testing/tests.test.js'",
     "test-watch": "nodemon --exec \"npm test\"",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build dist"
+    "postinstall": "ng build --prod"
   },
   "private": true,
   "dependencies": {

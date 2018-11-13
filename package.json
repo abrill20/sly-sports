@@ -9,7 +9,7 @@
     "test-watch": "nodemon --exec \"npm test\"",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot --configuration=prod"
+    "postinstall": "ng build --aot -env=prod"
   },
   "private": true,
   "dependencies": {

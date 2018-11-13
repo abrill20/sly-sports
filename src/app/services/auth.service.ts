@@ -61,6 +61,7 @@ export class AuthService {
   loadToken() {
     const token = localStorage.getItem('id_token');
     this.authToken = token;
+    if(environment.production == false) this.authToken = 'Bearer ' + this.authToken
   }
 
   loggedIn() {

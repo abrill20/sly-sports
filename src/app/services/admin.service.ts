@@ -26,6 +26,7 @@ export class AdminService {
   getHeaders() {
     this.loadToken();
     let headers = new HttpHeaders()
+    
     .set('Authorization', this.authToken).set('Content-Type', 'application/json')
     return headers;
   }
@@ -73,5 +74,6 @@ export class AdminService {
   loadToken(){
     const token = localStorage.getItem('id_token');
     this.authToken = token;
+    if(environment.production == false) this.authToken = 'Bearer ' + this.authToken 
   }
 }

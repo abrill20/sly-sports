@@ -58,7 +58,7 @@ export class ArticleComponent implements OnInit {
 
     }
     this.articleService.addComment(this.id, comment, this.user).subscribe(() => {
-      this.router.navigate([`/articles`]);
+      this.router.navigate([`/article/${this.id}`]);
     },
     err => {
       console.log(err);

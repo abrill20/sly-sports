@@ -9,7 +9,7 @@
     "test-watch": "nodemon --exec \"npm test\"",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
+    "postinstall": "ng build --output-path dist"
   },
   "private": true,
   "dependencies": {

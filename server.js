@@ -55,11 +55,11 @@ app.use('/api/articles', articles);
 app.use('/api/admin', admin);
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/dist/sly-sports/index.html'))
+  res.sendFile(path.join(__dirname, '/dist/index.html'))
 })
 
 app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/dist/sly-sports/index.html'))
+  res.sendFile(path.join(__dirname, '/dist/index.html'))
 })
 
 // For contact forms

@@ -46,6 +46,10 @@ export class NavbarComponent implements OnInit {
     })
   }
 
+  loggedIn() {
+    return this.authService.loggedIn();
+  }
+
   onLogoutClick() {
     this.authService.logout();
     this.snackBar.open('You are logged out', 'OK', {

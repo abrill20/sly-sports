@@ -41,7 +41,7 @@
           <i class="fa fa-twitter"></i>
         </a>
       </li>
-      <li *ngIf="authService.loggedIn()" class="nav-item dropdown" dropdown>
+      <li *ngIf="loggedIn()" class="nav-item dropdown" dropdown>
         <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-user"></i>
@@ -51,7 +51,7 @@
           <a class="dropdown-item" href="javascript:;;" (click)="onLogoutClick()" href="#">Logout</a>
         </div>
       </li>
-      <li *ngIf="!authService.loggedIn()" class="nav-item">
+      <li *ngIf="!loggedIn()" class="nav-item">
         <button type="button" mat-raised-button class="waves-light" (click)="basicModal.show()"
           mdbWavesEffect>Sign In</button>
       </li>

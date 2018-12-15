@@ -23,7 +23,7 @@ const routes: Routes = [
   {path: 'edit/:id', component: EditComponent, canActivate:[AdminGuard]},
   {path: 'admin', component: AdminArticlesComponent, canActivate:[AdminGuard]},
   {path: 'articles', component: ArticlesComponent},
-  {path: '', redirectTo: 'articles', pathMatch: 'full'},
+  {path: '', component: ArticlesComponent, pathMatch: 'full'},
   {path: 'about', component: AboutComponent},
   {path: 'article/:id', component: ArticleComponent},
   {path: 'contact', component: ContactComponent},

@@ -34,9 +34,9 @@ export class AuthService {
     return this.http.post(`${this.uri}api/users/authenticate`, user, { headers: headers })
   }
 
-  async getProfile() {
+  getProfile() {
     this.loadToken();
-    let headers = await new HttpHeaders()
+    let headers = new HttpHeaders()
       .set('Authorization', this.authToken).set('Content-Type', 'application/json');
     return this.http.get(`${this.uri}api/users/profile`, { headers: headers })
   }
@@ -67,12 +67,14 @@ export class AuthService {
   loggedIn() {
     const token = this.jwtHelper.tokenGetter();
     if (!token) return false;
-    return !this.jwtHelper.isTokenExpired();
+    return !this.jwtHelper.isTokenExpired(token);
   }
 
-  logout() {
+  async logout() {
     this.authToken = null;
     this.user = null;
     localStorage.clear();
+    await new Promise((resolve, reject) => setTimeout(resolve, 100));
+    this.router.navigate(['/articles']);
   }
 }

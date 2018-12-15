@@ -20,12 +20,12 @@ mongoose.connect(process.env.MONGODB_URI || config.database, {
 
 // On Connection
 mongoose.connection.on('connected', () => {
-  console.log('Connected to database');
+  logger.info('Connected to database');
 });
 
 // On Error
 mongoose.connection.on('error', (err) => {
-  console.log('Database error: '+err);
+  logger.info('Database error: '+err);
 });
 
 const app = express();
@@ -64,14 +64,14 @@ app.get('/*', (req, res) => {
 
 // For contact forms
 app.post('/incoming_mail', (req, res) => {
-  console.log(`${req.method} articles${req.url} ${req.httpVersion}`);
+  logger.info(`${req.method} articles${req.url} ${req.httpVersion}`);
   logger.info(`User is ${req.body.user}`);
   res.send(req.body.user);
 })
 
 
 app.listen(httpPort, () => {
-  console.log(`HTTP server up on port ${httpPort}`)
+  logger.info(`HTTP server up on port ${httpPort}`)
 })
 
 module.exports.app = app;

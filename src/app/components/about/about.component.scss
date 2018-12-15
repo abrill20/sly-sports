@@ -1,0 +1,25 @@
+.top-content {
+  margin: 25px;
+}
+.writers-section {
+  background-color: rgb(36, 36, 53);
+}
+
+.writers-section h3{
+  text-align: center;
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container > div {
+  margin: 20px;
+}
+.flex-container > div > img {
+  width: 150px;
+  border-radius: 50%;
+}

@@ -19,8 +19,8 @@ export class AdminArticlesComponent implements OnInit {
 
   constructor(private adminService: AdminService, private authService: AuthService, private router: Router) { }
 
-  async ngOnInit() {
-    let prof = await this.authService.getProfile();
+  ngOnInit() {
+    let prof = this.authService.getProfile();
     prof.subscribe((profile: any) => {
       this.user = profile.user;
     },

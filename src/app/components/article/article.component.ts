@@ -27,8 +27,8 @@ export class ArticleComponent implements OnInit {
     });
    }
 
-  async ngOnInit() {
-    let prof = await this.authService.getProfile();
+   async ngOnInit() {
+    let prof = this.authService.getProfile();
     prof.subscribe((profile: any) => {
       this.user = profile.user;
     },
@@ -48,6 +48,12 @@ export class ArticleComponent implements OnInit {
       console.log(err);
       return false;
     });
+
+    await new Promise((resolve, reject) => setTimeout(resolve, 100));
+    if(!this.article) {
+      console.log("NO ARTICLE");
+      this.router.navigate(['/articlenotfound']);
+    }
   }
 
   addComment(comment) {
@@ -58,7 +64,8 @@ export class ArticleComponent implements OnInit {
 
     }
     this.articleService.addComment(this.id, comment, this.user).subscribe(() => {
-      this.router.navigate([`/article/${this.id}`]);
+      //this.router.navigate([`/article/${this.id}`]);
+      window.location.reload();
     },
     err => {
       console.log(err);

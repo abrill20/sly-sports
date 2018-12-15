@@ -7,11 +7,23 @@ import { AuthService } from '../services/auth.service';
 
     user:any;
 
-    constructor(private authService: AuthService, private router: Router) {
-    }
+  constructor(private authService: AuthService, private router: Router) { }
 
-    canActivate() {
+  async canActivate() {
+    this.authService.getProfile().subscribe((profile: any) => {
+      this.user = profile.user;
+    },
+      err => {
+        console.log(err);
+        this.router.navigate(['/articles']);
+        return false;
+      });
+    await new Promise((resolve, reject) => setTimeout(resolve, 100));
+    if (!this.user) {
+      this.router.navigate(['/articles']);
+      return false;
+    } else {
       return true;
-
     }
   }
+}

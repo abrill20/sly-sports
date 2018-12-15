@@ -3,12 +3,13 @@ const router = express.Router();
 const jwt = require('jsonwebtoken');
 const passport = require('passport');
 const config = require('../config/database')
+const logger = require('../logging/logs');
 
 const User = require('../models/User');
 
 // Register
 router.post('/register', (req, res, next) => {
-  console.log(`${req.method} ${req.url} ${req.httpVersion}`);
+  logger.info(`${req.method} ${req.url} ${req.httpVersion}`);
   // Build user object
   let newUser = new User({
     username: req.body.username,
@@ -34,17 +35,24 @@ router.post('/register', (req, res, next) => {
 
 // Authenticate
 router.post('/authenticate', (req, res, next) => {
-  console.log(`${req.method} ${req.url} ${req.httpVersion}`);
+  logger.info(`${req.method} ${req.url} ${req.httpVersion}`);
   const username = req.body.username;
   const password = req.body.password;
   User.getUserByUsername(username, (err, user) => {
-    if(err) throw err;
+    if(err) {
+      logger.log(`Error authenticating in: ${err}`)
+      throw err;
+    }
     if(!user){
+      logger.debug(`Username not found ${username}`)
       return res.json({success: false, msg: 'User not found'});
     }
     // Make sure password matches
     User.comparePassword(password, user.password, (err, isMatch) => {
-      if(err) throw err;
+      if(err) {
+        logger.error(`Password error: ${err}`);
+        throw err;
+      }
       if(isMatch){
         //if match, create token
         const token = jwt.sign(user.toJSON(), config.secret, {
@@ -68,7 +76,7 @@ router.post('/authenticate', (req, res, next) => {
 
 // Profile
 router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res, next) => {
-  console.log(`${req.method} ${req.url} ${req.httpVersion}`);
+  logger.info(`${req.method} ${req.url} ${req.httpVersion}`);
   res.json({user: req.user, headers: req.headers});
 });
 

@@ -2,14 +2,15 @@ const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
 const passport = require('passport');
+const logger = require('../logging/logs');
 
 const Article = require('../models/Article');
 
 router.route('/').get((req, res) => {
-  console.log(`${req.method} articles${req.url} ${req.httpVersion}`);
+  logger.info(`${req.method} articles${req.url} ${req.httpVersion}`);
   Article.find((err, articles) => {
     if (err)
-      console.log(err);
+      logger.error(err);
     else {
       res.json(articles);
     }
@@ -17,25 +18,25 @@ router.route('/').get((req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-  console.log(`${req.method} articles${req.url} ${req.httpVersion}`);
+  logger.info(`${req.method} articles${req.url} ${req.httpVersion}`);
   Article.getArticleById(req.params.id, (err, article) => {
     if (err)
-      console.log(err);
+      logger.error(err);
     else
       res.json(article);
   });
 });
 
 router.post('/:id', (req, res) => {
-  console.log(`${req.method} articles${req.url} ${req.httpVersion}`);
+  logger.info(`${req.method} articles${req.url} ${req.httpVersion}`);
   const comment = req.body.comment;
   const username = req.body.username;
   Article.update({ _id: req.params.id }, { $push: { comments: {msg: comment, username: username} } }, function (err, article) {
      if (err) {
-       console.log('unsuccessful');
+       logger.error(`unsuccessful comment ${err}`);
        res.json(err);
      } else {
-       console.log('Comment success');
+       logger.info('Comment success');
        res.json('Removed successfully');
      }
    });

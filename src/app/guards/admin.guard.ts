@@ -10,15 +10,25 @@ import { AuthService } from '../services/auth.service';
     constructor(private authService: AuthService, private router: Router) {}
 
     async canActivate() {
-
-      let first = await this.authService.getProfile();
-      first.subscribe((profile: any) => {
+      this.authService.getProfile().subscribe((profile: any) => {
         this.user = profile.user;
       },
         err => {
           console.log(err);
+          this.router.navigate(['/articles']);
           return false;
         });
-      return true;
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
+      if (!this.user) {
+        this.router.navigate(['/articles']);
+        return false;
+      }
+      if(this.user.privileges != 'admin') {
+        this.router.navigate(['/articles']);
+        return false;
+      }
+      else {
+        return true;
+      }
     }
   }

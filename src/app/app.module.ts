@@ -7,7 +7,7 @@ import { JwtModule } from '@auth0/angular-jwt';
 import { AppRoutingModule } from './app-routing.module';
 
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { MatFormFieldModule, MatInputModule, MatButtonModule, MatCardModule, MatTableModule, MatDividerModule, MatSnackBarModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule, MatButtonModule, MatCardModule, MatListModule, MatTableModule, MatDividerModule, MatSnackBarModule } from '@angular/material';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
@@ -67,7 +67,7 @@ export function tokenGetter() {
     HttpModule,
     ReactiveFormsModule,
     FormsModule,
-    MatFormFieldModule, MatInputModule, MatButtonModule, MatCardModule, MatTableModule, MatDividerModule, MatSnackBarModule,
+    MatFormFieldModule, MatInputModule, MatButtonModule, MatCardModule, MatListModule, MatTableModule, MatDividerModule, MatSnackBarModule,
     MDBBootstrapModule.forRoot(),
     JwtModule.forRoot({
       config: {

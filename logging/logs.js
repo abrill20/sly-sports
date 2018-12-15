@@ -50,18 +50,18 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 // Log some messages
-logger.emerg("An emergency level message");
-logger.alert("An alert level message");
-logger.crit("A critical level message");
-logger.error("An error level message");
-logger.warning("A warning level message");
-logger.notice("A notice level message");
+// logger.emerg("An emergency level message");
+// logger.alert("An alert level message");
+// logger.crit("A critical level message");
+// logger.error("An error level message");
+// logger.warning("A warning level message");
+// logger.notice("A notice level message");
 
-var a = 1;
-var b = 5;
-logger.debug(`A debug level message: a:${a} b:${b}`);
+// var a = 1;
+// var b = 5;
+// logger.debug(`A debug level message: a:${a} b:${b}`);
 
-var sum = a + b;
-logger.info(`An info level message: sum:${sum}`);
+// var sum = a + b;
+// logger.info(`An info level message: sum:${sum}`);
 
 module.exports = logger;

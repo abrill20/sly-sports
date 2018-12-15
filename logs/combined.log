@@ -61,3 +61,1165 @@
 {"message":"A warning level message","level":"warning"}
 {"message":"A notice level message","level":"notice"}
 {"message":"An info level message: sum:6","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"Database error: MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Database error: MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"POST articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5bcea600a7a18133c87e4066 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Database error: MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"An emergency level message","level":"emerg"}
+{"message":"An alert level message","level":"alert"}
+{"message":"A critical level message","level":"crit"}
+{"message":"An error level message","level":"error"}
+{"message":"A warning level message","level":"warning"}
+{"message":"A notice level message","level":"notice"}
+{"message":"An info level message: sum:6","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5bcea600a7a18133c87e4066 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5bcea600a7a18133c87e4066 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /register 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /register 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET articles/5bcljea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"5bcljea5daa7a18133c87e4065\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"5bcljea5daa7a18133c87e4065\"","kind":"ObjectId","value":"5bcljea5daa7a18133c87e4065","path":"_id","level":"error"}
+{"message":"GET articles/5bcljea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"5bcljea5daa7a18133c87e4065\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"5bcljea5daa7a18133c87e4065\"","kind":"ObjectId","value":"5bcljea5daa7a18133c87e4065","path":"_id","level":"error"}
+{"message":"GET articles/5bcljea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"5bcljea5daa7a18133c87e4065\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"5bcljea5daa7a18133c87e4065\"","kind":"ObjectId","value":"5bcljea5daa7a18133c87e4065","path":"_id","level":"error"}
+{"message":"GET articles/5bcljea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"5bcljea5daa7a18133c87e4065\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"5bcljea5daa7a18133c87e4065\"","kind":"ObjectId","value":"5bcljea5daa7a18133c87e4065","path":"_id","level":"error"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/s 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"s\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"s\"","kind":"ObjectId","value":"s","path":"_id","level":"error"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/asdf 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"asdf\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"asdf\"","kind":"ObjectId","value":"asdf","path":"_id","level":"error"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/asdfas 1.1","level":"info"}
+{"message":"Cast to ObjectId failed for value \"asdfas\" at path \"_id\" for model \"Article\"","name":"CastError","stringValue":"\"asdfas\"","kind":"ObjectId","value":"asdfas","path":"_id","level":"error"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5bcea5daa7a18133c87e4065 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}

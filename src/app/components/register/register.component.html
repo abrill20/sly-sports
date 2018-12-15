@@ -1,19 +1,30 @@
 <br><br>
 <div class="container">
 
-  <div class="row">
-    <div class="col-md-6">
+  <div>
+    <div>
       <h1>Sign up</h1>
       <p class="lead">Already a member? Please <a routerLink="/login">log in</a> instead.</p>
-      <form [formGroup]="registerForm" class="register-form">
-        <mat-form-field class="form-group">
-          <input type="text" matInput formControlName="username" placeholder="Username" #username>
-        </mat-form-field>
-        <mat-form-field class="form-group">
-          <input type="password" matInput formControlName="password" placeholder="Password" #password>
-        </mat-form-field>
-        <button type="submit" class="btn btn-default" (click)="onRegisterSubmit(username.value, password.value)" [disabled]="registerForm.pristine || !registerForm.valid">Sign up!</button>
-      </form>
+      <div class="row">
+        <form [formGroup]="registerForm" class="register-form col-sm-6">
+          <mat-form-field class="form-group">
+            <input type="text" matInput formControlName="username" placeholder="Username" #username>
+          </mat-form-field>
+          <mat-form-field class="form-group">
+            <input type="password" matInput formControlName="password" placeholder="Password" #password>
+          </mat-form-field>
+
+          <button type="submit" class="btn btn-default" (click)="onRegisterSubmit(username.value, password.value)"
+            [disabled]="registerForm.pristine || !registerForm.valid">Sign up!</button>
+        </form>
+     
+          <ul class="col-sm-4 list-group">
+            <li class="list-group-item"><strong>Username</strong> must have at least 4 characters</li> 
+            <br>
+            <li class="list-group-item"><strong>Username</strong> must have at least 8 characters</li>
+          </ul>
+      
+      </div>
     </div>
   </div>
 

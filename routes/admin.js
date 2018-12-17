@@ -9,6 +9,7 @@ const User = require('../models/User');
 
 router.get('/', passport.authenticate('jwt', {session:false}), (req,res) => {
   logger.info(`${req.method} admin${req.url} ${req.httpVersion}`);
+  console.log("USERNAME IS: ", req.user.username);
   if(!req.user.privileges) {
     res.status(401);
     res.send("Unauthorized access");

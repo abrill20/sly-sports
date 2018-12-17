@@ -1223,3 +1223,174 @@
 {"message":"GET /profile 1.1","level":"info"}
 {"message":"GET articles/ 1.1","level":"info"}
 {"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /register 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Database error: MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}

@@ -15,6 +15,7 @@ router.post('/register', (req, res, next) => {
     username: req.body.username,
     password: req.body.password
   });
+  //TODO: Check password length and stuff
   // Make sure username not taken
   User.getUserByUsername(newUser.username, (err, user) => {
     if(err) throw err;
@@ -40,7 +41,7 @@ router.post('/authenticate', (req, res, next) => {
   const password = req.body.password;
   User.getUserByUsername(username, (err, user) => {
     if(err) {
-      logger.log(`Error authenticating in: ${err}`)
+      logger.error(`Error authenticating: ${err}`)
       throw err;
     }
     if(!user){

@@ -1419,3 +1419,368 @@
 {"message":"GET /profile 1.1","level":"info"}
 {"message":"GET admin/ 1.1","level":"info"}
 {"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST admin/add 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/5c180e9ec29a8b953d7dac8a 1.1","level":"info"}
+{"message":"POST admin/update/5c180e9ec29a8b953d7dac8a 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180e9ec29a8b953d7dac8a 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180e9ec29a8b953d7dac8a 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST articles/5c180e9ec29a8b953d7dac8a 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180e9ec29a8b953d7dac8a 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /register 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180e9ec29a8b953d7dac8a 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"Comment success","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"HTTP server up on port 8080","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"POST /authenticate 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET admin/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET /profile 1.1","level":"info"}

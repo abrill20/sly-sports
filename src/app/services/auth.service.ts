@@ -77,4 +77,11 @@ export class AuthService {
     await new Promise((resolve, reject) => setTimeout(resolve, 100));
     this.router.navigate(['/articles']);
   }
+
+  makeComment(comment, articleId, user) {
+    this.loadToken();
+    let headers = new HttpHeaders()
+      .set('Authorization', this.authToken).set('Content-Type', 'application/json');
+    return this.http.post(`${this.uri}api/articles/${articleId}`, {user: user, comment: comment}, { headers: headers })
+  }
 }

@@ -28,8 +28,7 @@ export class ArticleComponent implements OnInit {
    }
 
    async ngOnInit() {
-    let prof = this.authService.getProfile();
-    prof.subscribe((profile: any) => {
+    this.authService.getProfile().subscribe((profile: any) => {
       this.user = profile.user;
     },
       err => {
@@ -51,7 +50,6 @@ export class ArticleComponent implements OnInit {
 
     await new Promise((resolve, reject) => setTimeout(resolve, 100));
     if(!this.article) {
-      console.log("NO ARTICLE");
       this.router.navigate(['/articlenotfound']);
     }
   }
@@ -61,10 +59,8 @@ export class ArticleComponent implements OnInit {
       this.snackBar.open('Comment Unsuccessful', 'OK', {
       duration: 3000
     });
-
     }
-    this.articleService.addComment(this.id, comment, this.user).subscribe(() => {
-      //this.router.navigate([`/article/${this.id}`]);
+    this.authService.makeComment(comment, this.id, this.user).subscribe(() => {
       window.location.reload();
     },
     err => {

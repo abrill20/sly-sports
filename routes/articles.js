@@ -27,10 +27,10 @@ router.get('/:id', (req, res) => {
   });
 });
 
-router.post('/:id', (req, res) => {
+router.post('/:id', passport.authenticate('jwt', {session:false}), (req, res) => {
   logger.info(`${req.method} articles${req.url} ${req.httpVersion}`);
   const comment = req.body.comment;
-  const username = req.body.username;
+  const username = req.body.user.username;
   Article.update({ _id: req.params.id }, { $push: { comments: {msg: comment, username: username} } }, function (err, article) {
      if (err) {
        logger.error(`unsuccessful comment ${err}`);

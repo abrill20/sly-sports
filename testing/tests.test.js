@@ -17,12 +17,26 @@ describe("Web Application Tests", () => {
     .end(done);
   });
 
-  // NO PAGE TEST
-  it('should return 404 with error message', (done) => {
+  it('should return 200', (done) => {
     request(app)
-    .get('/nosuchpage')
+    .get('/api/articles/')
     .expect(200)
     .end(done);
+  });
+
+  // Article Test
+  it('Should give us title corresponding to article ID', (done) => {
+    request(app)
+    .get('/api/articles/5c180876debb1a94b78dcb43')
+    .expect(200)
+    .expect((res) => {
+      expect(res.body.titile == "Atlanta Cruise to their First MLS Cup")
+    })
+    .end(function(err, res) {
+      const articleTitle = res.body.title;
+      console.log(articleTitle);
+      done();
+    });
   });
 });
 
@@ -38,6 +52,13 @@ function nonUserTests() {
       .get('/api/users/profile')
       .expect(401, done);
   })
+
+  it('Should not allow comment when user is not logged in', function(done) {
+    request(app)
+      .post('/api/articles/5c180876debb1a94b78dcb43')
+      .send({ user: {username: "Some name"}, comment: "Some comment"})
+      .expect(401, done)
+  })
 }
 
 function regularUserTests() {
@@ -46,7 +67,7 @@ function regularUserTests() {
   before(function(done) {
     request(app)
       .post('/api/users/authenticate')
-      .send({ username: "John", password: "123" })
+      .send({ username: "John", password: "11111111" })
       .end(function(err, res) {
         token = res.body.token;
         done();
@@ -66,7 +87,13 @@ function regularUserTests() {
       .set('Authorization', 'Bearer ' + token)
       .expect(401, done);
   })
-  //Logout ???
+  //Comment
+  it('Should allow comment', function(done) {
+    request(app)
+      .get('/api/articles/5c180876debb1a94b78dcb43')
+      .set('Authorization', 'Bearer ' + token)
+      .expect(200, done);
+  })
 }
 
 function adminTests() {
@@ -75,10 +102,9 @@ function adminTests() {
   before(function(done) {
     request(app)
       .post('/api/users/authenticate')
-      .send({ username: "abrill", password: "123456" })
+      .send({ username: "abrill", password: "12345678" })
       .end(function(err, res) {
         token = res.body.token;
-        console.log('Aaron token: ', token);
         done();
       });
   });

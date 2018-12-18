@@ -21,51 +21,50 @@ export class ArticleComponent implements OnInit {
   url = 'http://sly-sports.herokuapp.com/';
   user: Object;
 
-  constructor(private authService: AuthService,private articleService: ArticleService, private router: Router, private route: ActivatedRoute, private fb: FormBuilder, private snackBar: MatSnackBar) {
+  constructor(private authService: AuthService, private articleService: ArticleService, private router: Router, private route: ActivatedRoute, private fb: FormBuilder, private snackBar: MatSnackBar) {
     this.commentForm = this.fb.group({
       comment: ''
     });
-   }
+  }
 
-   async ngOnInit() {
+  async ngOnInit() {
     this.authService.getProfile().subscribe((profile: any) => {
       this.user = profile.user;
     },
       err => {
-        console.log(err);
         return false;
       });
 
-    this.route.params.subscribe(params => {
+     this.route.params.subscribe(params => {
       this.id = params.id;
       this.articleService.getArticleById(this.id).subscribe(res => {
         this.article = res;
+        console.log(res);
         this.comments = this.article.comments;
       });
     },
-    err => {
-      console.log(err);
-      return false;
-    });
+      err => {
+        return false;
+      });
 
-    await new Promise((resolve, reject) => setTimeout(resolve, 100));
-    if(!this.article) {
+    await new Promise((resolve, reject) => setTimeout(resolve, 200));
+    if (!this.article) {
       this.router.navigate(['/articlenotfound']);
     }
   }
 
   addComment(comment) {
-    if(!this.user) {
+    if (!this.user) {
       this.snackBar.open('Comment Unsuccessful', 'OK', {
-      duration: 3000
-    });
+        duration: 3000
+      });
     }
     this.authService.makeComment(comment, this.id, this.user).subscribe(() => {
       window.location.reload();
     },
-    err => {
-      console.log(err);
-    });
+      err => {
+        console.log(err);
+      });
   }
 
 }

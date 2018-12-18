@@ -34,7 +34,7 @@ var distDir = __dirname + "/dist/";
 app.use(express.static(distDir));
 
 //Port Number
-const httpPort = process.env.PORT || 8080
+const httpPort = process.env.PORT || 8000
 
 // Cors Middleware
 app.use(cors());

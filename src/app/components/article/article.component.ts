@@ -35,18 +35,20 @@ export class ArticleComponent implements OnInit {
         return false;
       });
 
-     this.route.params.subscribe(params => {
+     await this.route.params.subscribe(params => {
       this.id = params.id;
       this.articleService.getArticleById(this.id).subscribe(res => {
         this.article = res;
-        console.log(res);
         this.comments = this.article.comments;
-      });
+      },
+        err => {
+          return false;
+        });
     },
       err => {
         return false;
       });
-
+    
     await new Promise((resolve, reject) => setTimeout(resolve, 200));
     if (!this.article) {
       this.router.navigate(['/articlenotfound']);

@@ -2318,3 +2318,25 @@
 {"message":"GET articles/ 1.1","level":"info"}
 {"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
 {"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8000","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"HTTP server up on port 8000","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180876debb1a94b78dcb43 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/5c180e9ec29a8b953d7dac8a 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}
+{"message":"GET articles/ 1.1","level":"info"}

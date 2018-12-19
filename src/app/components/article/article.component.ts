@@ -35,7 +35,7 @@ export class ArticleComponent implements OnInit {
         return false;
       });
 
-     await this.route.params.subscribe(params => {
+    this.route.params.subscribe(params => {
       this.id = params.id;
       this.articleService.getArticleById(this.id).subscribe(res => {
         this.article = res;
@@ -48,11 +48,14 @@ export class ArticleComponent implements OnInit {
       err => {
         return false;
       });
-    
-    await new Promise((resolve, reject) => setTimeout(resolve, 200));
-    if (!this.article) {
-      this.router.navigate(['/articlenotfound']);
-    }
+    await new Promise((resolve, reject) => setTimeout(() => {
+      if(this.article) {
+        resolve()
+      }
+      else reject(this.router.navigate([`/articlenotfound`]));
+      }, 
+      1000 ))
+      
   }
 
   addComment(comment) {

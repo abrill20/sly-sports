@@ -15,7 +15,12 @@ router.post('/register', (req, res, next) => {
     username: req.body.username,
     password: req.body.password
   });
-  //TODO: Check password length and stuff
+  
+  //Make sure password long enough
+  if(newUser.password.length < 8 || newUser.username.length < 4) {
+    res.json({success: false, msg:'Failed to register user'});
+  }
+
   // Make sure username not taken
   User.getUserByUsername(newUser.username, (err, user) => {
     if(err) throw err;

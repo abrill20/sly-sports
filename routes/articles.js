@@ -27,6 +27,7 @@ router.get('/:id', (req, res) => {
   });
 });
 
+// Used for commenting
 router.post('/:id', passport.authenticate('jwt', {session:false}), (req, res) => {
   logger.info(`${req.method} articles${req.url} ${req.httpVersion}`);
   const comment = req.body.comment;

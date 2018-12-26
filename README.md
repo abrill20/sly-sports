@@ -5,12 +5,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 A running version of the website can be found at
 https://sly-sports.herokuapp.com
 
-To access admin features, first login with username
-abrill and password 123456, then navigate to 
-https://sly-sports.herokuapp.com/admin
-
-
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
